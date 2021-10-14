@@ -54,8 +54,8 @@ redactor = event => {
     no.innerHTML = "No"
     td.innerHTML = `<input type=text class='form-control'/>`
     let input = td.children[0]
-    ok.classList.add('btn', 'btn-primary')
-    no.classList.add('btn', 'btn-danger')
+    ok.classList.add('btn', 'bg-primary', 'mx-2', 'text-white')
+    no.classList.add('btn', 'bg-danger', 'mx-2', 'text-white')
     redact.replaceWith(ok)
     del.replaceWith(no)
     input.focus()
@@ -108,11 +108,11 @@ addTodo.onclick = addTodoFunc = event => {
         todos.push(todoObj)
             // delet = document.createElement('td'),
         del = document.createElement('button')
-        del.classList.add('btn', 'btn-danger')
+        del.classList.add('btn', 'mx-3', 'bg-danger', 'text-white')
         del.onclick = deleter
         del.innerHTML = "Delete"
         redact.onclick = redactor
-        redact.classList.add('btn', 'btn-primary')
+        redact.classList.add('btn', 'bg-primary', 'text-white')
         redact.innerHTML = "Redact"
         check.type = "checkbox"
         td.classList = "td"
@@ -146,11 +146,11 @@ if (localStorage.getItem('ToDoTodo')) {
             todoObj = i
             // delet = document.createElement('td'),
         del = document.createElement('button')
-        del.classList.add('btn', 'btn-danger')
+        del.classList.add('btn', 'mx-3', 'bg-danger', 'text-white')
         del.onclick = deleter
         del.innerHTML = "Delete"
         redact.onclick = redactor
-        redact.classList.add('btn', 'btn-primary')
+        redact.classList.add('btn', 'bg-primary', 'text-white')
         redact.innerHTML = "Redact"
         check.type = "checkbox"
         td.classList = "td"
