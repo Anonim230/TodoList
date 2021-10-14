@@ -1,0 +1,46 @@
+body {
+    background-color: #62D7D0;
+}
+
+#Subject {
+    text-align: start;
+    line-height: 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+
+#todo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFF;
+    padding: 20px;
+}
+
+#todo_body {
+    line-height: 15px;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 92%;
+}
+
+#add_todo {
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    background: #8E49E9;
+    width: 5%;
+}
+
+table {
+    width: 100%;
+    text-align: start;
+}
+
+td {
+    border: 1px solid black;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}

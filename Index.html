@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div id="root">
+        <div id="todo" class="border border-2 rounded border-dark m-auto w-50 text-center">
+            <p id="Subject" class="my-2 h2 fw-bold">Super Todo
+                <span id="done" class="text-success">0</span>/<span id="allTodos" class="text-info">0</span></p>
+            <div>
+                <input id="todo_body" placeholder="Add new todo" autofocus></input>
+                <input type="button" value="+" id="add_todo" class="btn btn-primary">
+            </div>
+            <table class="table table-bordered ">
+                <!-- <tr id="tr "></tr> -->
+                <thead>
+                    <tr id="tableHead ">
+                        <th scope="col ">Added at</th>
+                        <th scope="col ">Todo</th>
+                        <th scope="col ">Redact && Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="todo_table">
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
