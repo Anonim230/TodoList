@@ -9,17 +9,16 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="bootstrap.min.css">
     <title>Todo List</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9497788081431903"
-     crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="root">
-        <div id="todo" class="border border-2 rounded border-dark m-auto w-50 text-center">
+        <div id="todo" class="border border-2 rounded border-dark m-auto text-center p-3 mt-2">
             <p id="Subject" class="my-2 h2 fw-bold">Super Todo
                 <span id="done" class="text-success">0</span>/<span id="allTodos" class="text-info">0</span></p>
-            <div>
-                <input id="todo_body" placeholder="Add new todo" autofocus></input>
+            <div class='d-flex justify-content-center my-2'>
+                <input id="todo_body" placeholder="Add new todo" autofocus class='form-control w-50' />
+                <span class='px-3'/>
                 <input type="button" value="+" id="add_todo" class="btn btn-primary">
             </div>
             <table class="table table-bordered ">

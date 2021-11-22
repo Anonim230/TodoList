@@ -17,7 +17,8 @@ deleter = event => {
     localStorage.setItem('ToDoTodo', JSON.stringify(todos));
 }
 
-
+window.onload = () => document.getElementById('root').className = window.innerWidth > 700 ? 'container' : ''
+window.onresize = () => document.getElementById('root').className = window.innerWidth > 700 ? 'container' : ''
 
 function* todoNumber() {
     while (true) {
